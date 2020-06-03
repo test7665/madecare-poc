@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Made Care - Delivering outstanding care always</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <!-- Plugins CSS -->
+    <link href="css/plugins/plugins.css" rel="stylesheet">
+    <!--dz parallaxer-->
+    <link href="dzsparallaxer/dzsparallaxer.css" rel="stylesheet">
+    <link href="dzsparallaxer/scroller.css" rel="stylesheet">
+    <link href="dzsparallaxer/advancedscroller/plugin.css" rel="stylesheet">
+    <link href="linearicons/fonts.css" rel="stylesheet">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <link href="linearicons/fonts.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="smart-form/callback/css/smart-forms.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div><!--/preloader-->
+    <header class="default-header ">
+        <!--header top-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <!--<img src="images/logo.png" alt="">-->
+
+                    <h3 style="font-weight: bolder; color: #fff; margin-bottom: 0px;">
+                        made<span style="
+    color: #e8b8b8;
+">Care</span><!--<span style="font-size: 17px;">&trade;</span>-->
+                    </h3>
+
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="our-staff.html">Our Staff</a></li>
+                        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class=" navbar-right-elements">
+                    <ul class="list-inline navbar-nav ml-auto racformul">
+                        <li class="list-inline-item"><a href="#popup-callback" class="popup-content btn btn-primary racform">Request a Callback</a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="search-open"><i class="ti-search"></i></a></li>
+                    </ul>
+
+                    <div id="popup-callback" class="popup-content-area white-popup mfp-hide">
+                        <h4>Request a call back</h4><hr>
+                        <p>To enquire about any of our services, please call us on <a href="tel:0137-546-1238" style=" font-size: 17px;font-weight: 600;">0137 546 1238</a>, or fill out the form below and we will get in touch.</p>
+                        <div class="smart-forms smart-container">
+                            <form method="post" action="smart-form/callback/php/smartprocess.php" id="smart-form">
+                                <div class="form-group">
+
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control gui-input" id="sendername" name="sendername" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tel">Telephone</label>
+                                    <input type="tel" class="form-control" id="tel" placeholder="Telephone Number">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="emailadd">Email address</label>
+                                    <input type="email" class="form-control" name="emailaddress" id="emailaddress" placeholder="Email address">
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" rows="6" id="sendermessage" name="sendermessage" placeholder="Message"> </textarea>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="consent">
+                                        I consent to having my data stored for the purposes of contacting me about my query.
+                                    </label>
+                                    <input type="checkbox" class="form-control" id="consent" style="width: 35px; height:35px !important; min-height:35px !important; " />
+
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="request">Request a call back.</label>
+                                    <input type="checkbox" class="form-control" id="rcallback" style="width: 35px; height:35px !important; min-height:35px !important;" />
+
+                                </div>
+
+                                <div class="section">
+                                    <div class="smart-widget sm-left sml-120">
+                                        <label class="field">
+                                            <input type="text" name="captcha" id="captcha" class="gui-input sfcode" maxlength="6" placeholder="Enter CAPTCHA">
+                                        </label>
+                                        <label class="button captcode">
+                                            <img src="smart-form/callback/php/captcha/captcha.php?<?php echo time();?>" id="captchax" alt="captcha">
+                                            <span class="refresh-captcha"><i class="fa fa-refresh"></i></span>
+                                        </label>
+                                    </div><!-- end .smart-widget section -->
+                                </div>
+
+
+
+                                <div class="result"></div>
+
+                                <div class="clearfix">
+                                    <!-- <label class="custom-control float-left custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Accept T&amp;C</span>
+                                    </label>-->
+                                    <button type="submit" data-btntext-sending="Sending..." class="btn btn-primary float-right">Submit Us</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header><!--Header-->
+
+
+    <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.1 auto mode -->
+        <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-3045" data-transition="parallaxtoleft" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/slide1.jpeg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption mainSlide-Subtitle shadowtxtsl tp-resizeme"
+                         id="slide-1706-layer-1"
+                         data-x="['left','left','left','left']" data-hoffset="['70','70','70','15']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-110','-110','-90','-30']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-fontsize="['45','45','40','40']"
+                         data-lineheight="['25','25','25','25']"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":800,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['left','left','left','left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 7; white-space: nowrap;text-transform:left;">Welcome to <span>Made Care</span></div>
+                    <!-- LAYER NR. 1 -->
+                   <!-- <div class="tp-caption mainSlide-Subtitle tp-resizeme"
+                         id="slide-1706-layer-2"
+                         data-x="['left','left','left','left']" data-hoffset="['180','180','180','125']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-110','-110','-90','-30']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-fontsize="['40','40','40','40']"
+                         data-lineheight="['25','25','25','25']"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":1400,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['left','left','left','left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[0,0,0,0]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 7; white-space: nowrap;text-transform:left;">Made Care</div>-->
+                   <div class="tp-caption mainSlide-Title  tp-resizeme"
+                         id="slide-1706-layer-3"
+                         data-x="['left','left','left','left']" data-hoffset="['70','70','70','15']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-20','-20','00','50']"
+                         data-fontsize="['30','30','30','30']"
+                         data-lineheight="['65','65','55','35']"
+                         data-width="['800','700','621','420']"
+                         data-height="none"
+                         data-whitespace="normal"
+                         data-type="text"
+                         data-responsive_offset="on"
+                         data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['left','left','left','left']"
+                         data-paddingtop="[0,0,0,0]"
+                         data-paddingright="[0,0,0,0]"
+                         data-paddingbottom="[10,10,10,10]"
+                         data-paddingleft="[0,0,0,0]"
+                         style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Delivering outstanding care always<br></div>
+                    <!-- LAYER NR. 3 -->
+                  <div class="tp-caption mainSlide-Button btn btn-lg btn-white carebtn "
+                         id="slide-1706-layer-4"
+                         data-x="['left','left','left','left']" data-hoffset="['70','70','70','15']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['80','80','100','130']"
+                         data-width="none"
+                         data-height="none"
+                         data-whitespace="nowrap"
+                         data-type="button"
+                         data-actions='[{"event":"click","action": "simplelink", "target": "_self", "url": "services.html"}]'
+                         data-responsive_offset="on"
+                         data-responsive="off"
+                         data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-textAlign="['left','left','left','left']"
+                         data-paddingtop="[12,12,12,12]"
+                         data-paddingright="[35,35,35,35]"
+                         data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
+                         style="z-index: 8; white-space: normal;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; font-size:17px"><strong>Looking for care at home?</strong></div>
+                
+                  <div class="tp-caption mainSlide-Button btn btn-lg btn-white  careerbtn"
+                       id="slide-1706-layer-5"
+                       data-x="['left','left','left','left']" data-hoffset="['420','420','70','15']"
+                       data-y="['middle','middle','middle','middle']" data-voffset="[80','80','180','130']"
+                       data-width="none"
+                       data-height="none"
+                       data-whitespace="nowrap"
+                       data-type="button"
+                       data-actions='[{"event":"click","action": "simplelink", "target": "_self", "url": "careers.html"}]'
+                       data-responsive_offset="on"
+                       data-responsive="off"
+                       data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                       data-textAlign="['left','left','left','left']"
+                       data-paddingtop="[12,12,12,12]"
+                       data-paddingright="[35,35,35,35]"
+                       data-paddingbottom="[12,12,12,12]"
+                       data-paddingleft="[35,35,35,35]"
+                       style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer; font-size:17px"><strong>Looking for a career in care?</strong></div>
+                
+                </li>
+                <!-- SLIDE  -->
+
+            </ul>
+            <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+        </div>
+    </div><!-- END REVOLUTION SLIDER -->
+
+
+    <div class="covid">
+        <div class="container">
+            <h3>
+                <a href="covid-19.html">
+                    See how we're dealing with the coronavirus pandemic.
+                </a>
+            </h3>
+        </div>
+    </div>
+
+
+
+    <div class="container pt60 pb60">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="font300 h1 text-primary">
+                    We provide the best care by tailor-making every care plan to it’s intended service user.
+                </h2>
+                <p class="lead ">
+                    At Made Care, our motto is ‘delivering outstanding care always’.  We believe that every individual is unique and different therefore we delight in providing the best care by tailor-making every care plan to it’s intended service user.  We set a high goal when it comes to our ‘standard of care’ and we try to also consider your medical background when making your care plan to ensure that we are providing you with the optimum care.
+                </p>
+                <a href="about-us.html" style="
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cf007b;
+">Find out more about us</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+    <!--parallax-->
+
+    <div class="bg-dark pt90 pb60">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb30">
+                    <h2 class="mb30 text-white">Our Services</h2>
+                    <p class="lead text-white-gray">
+                        We pride ourselves in providing a range of services.  These includes but not restricted to:
+                    </p><br>
+                    <div id="accordion" class="mb50" role="tablist" aria-multiselectable="true">
+                        <div class="card mb10">
+                            <div class="card-header accordion-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapset" data-parent="#accordion" href="services.html#Domiciliary Care" aria-expanded="true" aria-controls="collapseOne">
+                                        Domiciliary Care
+                                    </a>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne">
+                                <div class="card-body">
+                                    <p>
+                                        We provide Home enablement service & assistance with daily living e.g: help with mobility, shower or bath, getting dressed, having breakfast e.t.c.
+                                    </p>
+                                    <ul>
+                                        <li>Shopping support – either alongside our client or independently with consent and agreed shopping list from our client.</li>
+                                        <li>Arrangement of Groceries.</li>
+                                        <li>Preparation of food and drink.</li>
+                                        <li>Ensuring a timely prompt for medication when due.</li>
+                                        <li>Medication administration for clients.</li>
+                                        <li>Undertaking domestic tasks such as cleaning, laundry and ironing either on a regular basis or as a ‘spring clean’, whatever the season.</li>
+                                        <li>At the end of each day, some help with getting ready for bed.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb10">
+                            <div class="card-header accordion-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapset" data-parent="#accordion" href="services.html#Live in care" aria-expanded="false" aria-controls="collapseTwo">
+                                        Live in care
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    <p>
+                                        Providing a care worker to live with you in your home. Similarly, we often provide live-in care when a customer needs temporary support through a period of convalescence or recuperation when returning from hospital.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb10">
+                            <div class="card-header accordion-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapset" data-parent="#accordion" href="services.html#Night care" aria-expanded="false" aria-controls="collapseThree">
+                                        Night care
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="card-body">
+                                    <p>Depending on your individual needs,  our care package could include:</p>
+                                    <ul>
+                                        <li>
+                                            Provision of care services through the night for those people who need them. This can either be:
+                                            <ul>
+                                                <li>
+                                                    Sleeper night-where the care worker expects a reasonable night's sleep but is on hand for emergencies.
+                                                </li>
+                                                <li>
+                                                    Waking night-where the care worker is on duty throughout the night
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="services.html" class="btn btn-lg btn-white-outline">Go to services page</a>
+                </div>
+                <div class="col-md-7 mb30">
+                    <img src="images/services.jpeg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="careers.html" class="btn btn-block btn-primary pt40 pb40 btn-lg"><span style="font-size: 17px; white-space: normal;">Looking for a career with Made Care?</span><br /><br /><span style="text-decoration:underline">Find out more</span></a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb30">
+                    <a class="navbar-brand mb30" href="index.html" style="padding-top:0px;">
+                        <!--<img src="images/logo.png" alt="">-->
+
+                        <h3 style="font-weight: bolder; color: #fff; margin-bottom: 0px;">
+                            made<span style="
+    color: #e8b8b8;
+">Care</span><!--<span style="font-size: 17px;">&trade;</span>-->
+                        </h3>
+
+                    </a>
+
+                    <img src="images/UKHCA.png" alt="" class="ukhca-logo" style="
+    margin-bottom: 40px;
+">
+
+                    <h4>Stay Connected</h4>
+                    <div>
+                        <a href="#" class="social-icon-sm si-dark si-colored-facebook si-gray-round">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon-sm  si-dark si-colored-twitter si-gray-round">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 mb30">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled">
+
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="our-staff.html">Our Staff</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 mb30">
+                    <h4>Legal</h4>
+                    <ul class="list-unstyled">
+
+
+                        <li><a href="cookies.html">Cookies</a></li>
+
+
+
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+
+
+
+                    </ul>
+
+                </div>
+                <div class="col-md-3 mb30">
+
+                    <h4>Address</h4>
+                    <ul class="list-unstyled contact">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            3, Diamond House<br>10 High Street, RM17 6LU
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:0137-546-1238">0137-546-1238</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:info@madecare.co.uk">info@madecare.co.uk</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row pt40">
+
+                <div class="col-md-12 text-center">
+                    &copy; Copyright 2020 - Made Care. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--back to top-->
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script type="text/javascript" src="js/plugins/plugins.js"></script>
+    <script type="text/javascript" src="js/madecarecustom.js"></script>
+    <!--dz parallaxer-->
+    <script type="text/javascript" src="dzsparallaxer/dzsparallaxer.js"></script>
+    <script type="text/javascript" src="dzsparallaxer/scroller.js"></script>
+    <script type="text/javascript" src="dzsparallaxer/advancedscroller/plugin.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="js/revolution-custom.js"></script>
+    <script src="smart-form/callback/js/jquery.form.min.js" type="text/javascript"></script>
+    <script src="smart-form/callback/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="smart-form/callback/js/additional-methods.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="smart-form/callback/js/smart-form.js"></script>
+
+</body>
+</html>
